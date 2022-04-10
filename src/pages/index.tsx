@@ -1,10 +1,11 @@
 import type { NextPage } from "next";
+import SketchComponent from "../components/SketchComponent";
 
 const Home: NextPage = () => {
   return (
-    <div>
-      <h1>Hello World</h1>
-    </div>
+    <>
+      <SketchComponent />
+    </>
   );
 };
 
