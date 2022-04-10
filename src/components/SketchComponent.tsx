@@ -1,6 +1,6 @@
 import React from "react";
-import dynamic from "next/dynamic";
 import sketch from "../utils/sketch";
+import dynamic from "next/dynamic";
 import { P5WrapperProps } from "react-p5-wrapper";
 
 const ReactP5Wrapper = dynamic(
