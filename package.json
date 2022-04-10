@@ -1,7 +1,8 @@
 {
-  "name": "zoom-and-move",
+  "name": "p5-nextjs-template",
   "version": "0.1.0",
   "private": true,
+  "author": "Eugene Matsumura",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

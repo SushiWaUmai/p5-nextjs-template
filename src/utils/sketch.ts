@@ -4,6 +4,7 @@ const sketch = (p5: P5Instance) => {
   p5.setup = () => {
     p5.createCanvas(p5.windowHeight, p5.windowHeight);
   };
+  
   p5.draw = () => {
     p5.background(0);
     p5.fill(255);
