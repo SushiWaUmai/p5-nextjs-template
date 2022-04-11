@@ -11,7 +11,7 @@ specifiers:
   postcss: ^8.4.12
   react: 18.0.0
   react-dom: 18.0.0
-  react-p5-wrapper: ^3.3.0
+  react-p5: ^1.3.27
   tailwindcss: ^3.0.23
   typescript: 4.6.3
 
@@ -19,7 +19,7 @@ dependencies:
   next: 12.1.4_react-dom@18.0.0+react@18.0.0
   react: 18.0.0
   react-dom: 18.0.0_react@18.0.0
-  react-p5-wrapper: 3.3.0_react-dom@18.0.0+react@18.0.0
+  react-p5: 1.3.27_react-dom@18.0.0+react@18.0.0
 
 devDependencies:
   '@types/node': 17.0.23
@@ -253,8 +253,8 @@ packages:
     resolution: {integrity: sha512-UxDxWn7dl97rKVeVS61vErvw086aCYhDLyvRQZ5Rk65rZKepaFdm53GeqXaKBuOhED4e9uWq34IC3TdSdJJ2Gw==}
     dev: true
 
-  /@types/p5/1.4.2:
-    resolution: {integrity: sha512-tzJ2PdmeXlX8tidbA1/pQEhs0MHVWam0K4ux5ri0GrZXhBU3QrpTpSVzNaBDuo6KheryHdH8wR82x1nPvxo42g==}
+  /@types/p5/1.3.3:
+    resolution: {integrity: sha512-PBSFnX6IgV6Pqlx9wocUjSkGlm1I1ymz9tEiTbdNCqig6FOGiWcVUHx13TXRTBfRIhZC9+MqqgztMsgzpueaUg==}
     dev: false
 
   /@types/parse-json/4.0.0:
@@ -1442,10 +1442,6 @@ packages:
       path-exists: 3.0.0
     dev: true
 
-  /lodash.debounce/4.0.8:
-    resolution: {integrity: sha1-gteb/zCmfEAF/9XiUVMArZyk168=}
-    dev: false
-
   /lodash.merge/4.6.2:
     resolution: {integrity: sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==}
     dev: true
@@ -1465,10 +1461,6 @@ packages:
     resolution: {integrity: sha512-8q7VEgMJW4J8tcfVPy8g09NcQwZdbwFEqhe/WZkoIzjn/3TGDwtOCYtXGxA3O8tPzpczCCDgv+P2P5y00ZJOOg==}
     engines: {node: '>= 8'}
     dev: true
-
-  /microdiff/1.3.0:
-    resolution: {integrity: sha512-inB7Krtw90hnpijkMWaQMzdpsYnDCnpholaVwqPebs1m3pkk9U/qRfbKcB2UpbPFnt0WX/GHj33wD7TtdlgYZQ==}
-    dev: false
 
   /micromatch/4.0.5:
     resolution: {integrity: sha512-DMy+ERcEW2q8Z2Po+WNXuw3c5YaUSFjAO5GsJqfEl7UjvtIuFKO6ZrKvcItdy98dwFI2N1tg3zNIdKaQT+aNdA==}
@@ -1634,6 +1626,11 @@ packages:
       wrappy: 1.0.2
     dev: true
 
+  /opencollective-postinstall/2.0.2:
+    resolution: {integrity: sha512-pVOEP16TrAO2/fjej1IdOyupJY8KDUM1CvsaScRbw6oddvpQoOfGk4ywha0HKKVAD6RkW4x6Q+tNBwhf3Bgpuw==}
+    hasBin: true
+    dev: false
+
   /optionator/0.9.1:
     resolution: {integrity: sha512-74RlY5FCnhq4jRxVUPKDaRwrVNXMqsGsiW6AJw4XK8hmtm10wC0ypZBLw5IIp85NZMr91+qd1RvvENwg7jjRFw==}
     engines: {node: '>= 0.8.0'}
@@ -1665,8 +1662,8 @@ packages:
     engines: {node: '>=4'}
     dev: true
 
-  /p5/1.4.1:
-    resolution: {integrity: sha512-3/X+qb0bK2Cg8nuZNpZZvzxkeUSRghOf0S+l8c+U8yIkUTVSbbcV0R8y96rx3InVBVhk8cH9kFC93VlZZElqSw==}
+  /p5/1.3.1:
+    resolution: {integrity: sha512-g7W2htgEwiAEGcl0WHccAJKbunUJwrUojUSR9+KihphJ33p5VpDdh1K8pDx4ppYjOr/lVEXaZ1XXDj27nwlNOg==}
     dev: false
 
   /parent-module/1.0.1:
@@ -1709,10 +1706,6 @@ packages:
     resolution: {integrity: sha512-gDKb8aZMDeD/tZWs9P6+q0J9Mwkdl6xMV8TjnGP3qJVJ06bdMgkbBlLU8IdfOsIsFz2BW1rNVT3XuNEl8zPAvw==}
     engines: {node: '>=8'}
     dev: true
-
-  /performance-now/2.1.0:
-    resolution: {integrity: sha1-Ywn04OX6kT7BxpMHrjZLSzd8nns=}
-    dev: false
 
   /picocolors/1.0.0:
     resolution: {integrity: sha512-1fygroTLlHu66zi26VoTDv8yRgm0Fccecssto+MhsZ0D/DGW2sm8E8AjW7NU5VVTRt5GxbeZ5qBuJr+HyLYkjQ==}
@@ -1816,12 +1809,6 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /raf/3.4.1:
-    resolution: {integrity: sha512-Sq4CW4QhwOHE8ucn6J34MqtZCeWFP2aQSmrlroYgqAV1PjStIhJXxYuTgUIfkEk7zTLjmIjLmU5q+fbD1NnOJA==}
-    dependencies:
-      performance-now: 2.1.0
-    dev: false
-
   /react-dom/18.0.0_react@18.0.0:
     resolution: {integrity: sha512-XqX7uzmFo0pUceWFCt7Gff6IyIMzFUn7QMZrbrQfGxtaxXZIcGQzoNpRLE3fQLnS4XzLLPMZX2T9TRcSrasicw==}
     peerDependencies:
@@ -1836,18 +1823,18 @@ packages:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
     dev: true
 
-  /react-p5-wrapper/3.3.0_react-dom@18.0.0+react@18.0.0:
-    resolution: {integrity: sha512-7XqI8fGtE7utAOt6dtJivmQQftFA+H0pK9o99aM8evsazo7TCfkNWLBuv8HjHabvOx9sOqtVO7pWWHDMxK6h1w==}
+  /react-p5/1.3.27_react-dom@18.0.0+react@18.0.0:
+    resolution: {integrity: sha512-xoWxYvHXYNXjgox+66HwuZRnNmu5uiRbwBOR1kggqqpXGtRjMmMny7qpL1vE2MfkokZQg03FxW6nGp5+/zqtLQ==}
+    requiresBuild: true
     peerDependencies:
-      react: '>=16.8.0'
-      react-dom: '>=16.8.0'
+      react: '>= 17.0.1'
+      react-dom: '>= 17.0.1'
     dependencies:
-      '@types/p5': 1.4.2
-      microdiff: 1.3.0
-      p5: 1.4.1
+      '@types/p5': 1.3.3
+      opencollective-postinstall: 2.0.2
+      p5: 1.3.1
       react: 18.0.0
       react-dom: 18.0.0_react@18.0.0
-      rooks: 5.11.0_react-dom@18.0.0+react@18.0.0
     dev: false
 
   /react/18.0.0:
@@ -1913,19 +1900,6 @@ packages:
     dependencies:
       glob: 7.2.0
     dev: true
-
-  /rooks/5.11.0_react-dom@18.0.0+react@18.0.0:
-    resolution: {integrity: sha512-acyTuaYbB021hhHAN6uiU6QUUSuGucK9YOU16nOUM0oypqpckYm7nX5v9xnopoX4pNtrxzIM/mtjC8O7fF3/8A==}
-    engines: {node: '>=10'}
-    peerDependencies:
-      react: ^16.8.0  || ^17.0.0 || ^18.0.0
-      react-dom: ^16.8.0  || ^17.0.0 || ^18.0.0
-    dependencies:
-      lodash.debounce: 4.0.8
-      raf: 3.4.1
-      react: 18.0.0
-      react-dom: 18.0.0_react@18.0.0
-    dev: false
 
   /run-parallel/1.2.0:
     resolution: {integrity: sha512-5l4VyZR86LZ/lDxZTR6jqL8AFE2S0IFLMP26AbjsLVADxHdhB/c0GUsH+y39UfCi3dzz8OlQuPmnaJOMoDHQBA==}

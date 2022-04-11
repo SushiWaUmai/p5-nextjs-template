@@ -1,19 +1,21 @@
 import React from "react";
-import sketch from "../utils/sketch";
+import { setup, draw } from "../utils/sketch";
 import dynamic from "next/dynamic";
-import { P5WrapperProps } from "react-p5-wrapper";
+import Head from "next/head";
 
-const ReactP5Wrapper = dynamic(
-  () => import("react-p5-wrapper").then((mod) => mod.ReactP5Wrapper as any),
-  {
-    ssr: false,
-  }
-) as unknown as React.NamedExoticComponent<P5WrapperProps>;
+const Sketch = dynamic(import("react-p5"), { ssr: false });
 
 interface SketchComponentProps {}
 
 const SketchComponent: React.FC<SketchComponentProps> = () => {
-  return <ReactP5Wrapper sketch={sketch} />;
+  return (
+    <>
+      <Head>
+        <title>p5 + Next.js template</title>
+      </Head>
+      <Sketch setup={setup} draw={draw} />
+    </>
+  );
 };
 
 export default SketchComponent;
